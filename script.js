@@ -124,22 +124,22 @@ function drawLine(indexNum) {
     line.style.width = "600px";
 
     if (indexNum == 0) {
-      line.style.top = "185px";
+      line.style.top = "265px";
     } else if (indexNum == 1) {
-      line.style.top = "390px";
+      line.style.top = "470px";
     } else {
-      line.style.top = "595px";
+      line.style.top = "670px";
     }
   } else if (indexNum == 3 || indexNum == 4 || indexNum == 5) {
     line.style.height = "600px";
     line.style.width = "5px";
 
     if (indexNum == 3) {
-      line.style.left = "565px";
+      line.style.left = "755px";
     } else if (indexNum == 4) {
-      line.style.left = "770px";
+      line.style.left = "958px";
     } else {
-      line.style.left = "970px";
+      line.style.left = "1160px";
     }
   } else {
     if (indexNum == 6) {
