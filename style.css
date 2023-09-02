@@ -1,8 +1,9 @@
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
 }
 .parentBox{
     display: flex;
@@ -26,4 +27,20 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+#result{
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #98D7C2;
+    margin-top: 40px;
+    top: 680px;
+    position: absolute;
+    
+}
+#winLine{
+    background-color: red;
+    position: absolute;
+    display:none;
+}
+
 
