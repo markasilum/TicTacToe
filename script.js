@@ -111,7 +111,8 @@ function winOrNot() {
         setTimeout(function(){alert(winLetter)},0)
       } else {
         if (numOfTiles == 9 && win == false) {
-          setTimeout(function(){alert("Draw")},0)
+          setTimeout(function(){alert("Draw")},10)
+          
           break
         }
       }
