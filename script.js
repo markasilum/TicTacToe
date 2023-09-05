@@ -107,10 +107,11 @@ function winOrNot() {
         let winLetter= index[2].toUpperCase() + " won!";
         let indexNum = winComboArr.indexOf(index);//returns the index of the array which satisfied the condition
         drawLine(indexNum);
-        alert(winLetter)
+        
+        setTimeout(function(){alert(winLetter)},0)
       } else {
         if (numOfTiles == 9 && win == false) {
-          alert("Draw")
+          setTimeout(function(){alert("Draw")},0)
           break
         }
       }
