@@ -104,12 +104,14 @@ function winOrNot() {
     if (index.length == 3) {
       if (index[0] == index[1] && index[1] == index[2]) {
         win = true;
-        result.innerHTML = index[2].toUpperCase() + " won!";
+        let winLetter= index[2].toUpperCase() + " won!";
         let indexNum = winComboArr.indexOf(index);//returns the index of the array which satisfied the condition
         drawLine(indexNum);
+        alert(winLetter)
       } else {
         if (numOfTiles == 9 && win == false) {
-          result.innerHTML = "Draw";
+          alert("Draw")
+          break
         }
       }
     }
