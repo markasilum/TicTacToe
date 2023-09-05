@@ -53,7 +53,7 @@ for (const tile of tiles) {
         tile.innerHTML = "<div class='mark'>" + mark + "</div>";
         numOfTiles++;
       }
-      tileId = tile.id;
+      let tileId = tile.id;
       pushMarks(tileId);
       winOrNot();
     }
