@@ -119,41 +119,11 @@ function winOrNot() {
     }
   }
 }
-
-function drawLine(indexNum) {
-  const line = document.getElementById("winLine");
-  line.style.display = "block";
-  if (indexNum == 0 || indexNum == 1 || indexNum == 2) {
-    line.style.height = "5px";
-    line.style.width = "600px";
-
-    if (indexNum == 0) {
-      line.style.top = "265px";
-    } else if (indexNum == 1) {
-      line.style.top = "470px";
-    } else {
-      line.style.top = "670px";
-    }
-  } else if (indexNum == 3 || indexNum == 4 || indexNum == 5) {
-    line.style.height = "600px";
-    line.style.width = "5px";
-
-    if (indexNum == 3) {
-      line.style.left = "755px";
-    } else if (indexNum == 4) {
-      line.style.left = "958px";
-    } else {
-      line.style.left = "1160px";
-    }
-  } else {
-    if (indexNum == 6) {
-      line.style.transform = "rotate(-45deg)";
-      line.style.height = "800px";
-      line.style.width = "5px";
-    } else {
-      line.style.transform = "rotate(45deg)";
-      line.style.height = "800px";
-      line.style.width = "5px";
-    }
+function drawLine(indexNum){
+  let winningArray = possibleWinningCombo[indexNum]
+  for(index of winningArray){
+    let winId = document.getElementById(index);
+    winId.style.backgroundColor = "red"
   }
+
 }
