@@ -98,32 +98,33 @@ function pushMarks(tileId) {
   }
 }
 function winOrNot() {
+  let winLetter
+  let indexNum
   //check the indexes of winning combo array
   for (index of winComboArr) {
     //if index is full, check if contents are the same value
     if (index.length == 3) {
       if (index[0] == index[1] && index[1] == index[2]) {
         win = true;
-        let winLetter= index[2].toUpperCase() + " won!";
-        let indexNum = winComboArr.indexOf(index);//returns the index of the array which satisfied the condition
-        drawLine(indexNum);
-        
-        setTimeout(function(){alert(winLetter)},0)
-      } else {
-        if (numOfTiles == 9 && win == false) {
-          setTimeout(function(){alert("Draw")},10)
-          
-          break
-        }
-      }
+        winLetter= index[2].toUpperCase() + " is the winner";
+        indexNum = winComboArr.indexOf(index);//returns the index of the array which satisfied the condition
+      } 
     }
   }
+  if(win==true){
+    console.log(winLetter)
+    drawLine(indexNum);
+    setTimeout(function(){alert(winLetter)},0)
+  }else if(numOfTiles == 9 && win==false){
+    console.log("draw")
+    setTimeout(function(){alert("Draw")},10)
+    }
 }
 function drawLine(indexNum){
   let winningArray = possibleWinningCombo[indexNum]
   for(index of winningArray){
     let winId = document.getElementById(index);
-    winId.style.backgroundColor = "red"
+    winId.style.backgroundColor = "#FB4570"
   }
 
 }
