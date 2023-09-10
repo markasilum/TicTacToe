@@ -4,12 +4,13 @@ body{
     justify-content: center;
     align-items: center;
     height: 95vh;
+    background-color: #DDFFE7;
 }
 .parentBox{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: #DDFFE7;
     gap: 6px;
     height: 600px;
     width: 600px;
@@ -23,12 +24,24 @@ body{
     width: 196px;
 }
 .childBox:hover{
-    background-color: #64bfa4;
+    background-color: #65A9A6
+
+    ;
 }
 .mark{
     font-size: 150px;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: #FAF8F6 
+
+
+
+
+
+
+
+
+
+    ;
 }
 #result{
     font-size:xx-large;
@@ -39,7 +52,7 @@ body{
     top: 83vh;
 }
 #winLine{
-    background-color: red;
+    background-color: #EF7C8E;
     position: absolute;
     display:none;
 }
